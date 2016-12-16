@@ -82,6 +82,7 @@ try{
 			$.post($(this).attr("action"),$(this).serialize(),function(response){
 				$("#comment-form").find(".btn").removeAttr('disabled')
 				$("#submitting").hide()
+//                response = "s";
 				if(response == "s") {
 					$("#notice").addClass("alert-success").removeClass("alert-danger").html("<strong>Success!</strong> Thank you.")
 					loadComments(1)

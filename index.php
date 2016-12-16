@@ -1,11 +1,8 @@
 <?php 
 require_once 'db_config.php';
 require_once 'class.paging.php';
-//fetch news list from db
-$pagination = new paginate($db,"SELECT * FROM news","created_at desc");
+$pagination = new paginate($db,"SELECT * FROM news");
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>

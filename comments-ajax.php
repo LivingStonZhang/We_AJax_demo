@@ -1,7 +1,6 @@
 <?php
 require_once 'db_config.php';
 require_once 'class.paging.php';
-//fetch news from db
 $pagination = new paginate($db,"SELECT * FROM comments where news_id = {$_GET["nid"]}","id desc",5);
 ?>
 <div class="pagination"><span class="showing_records">
